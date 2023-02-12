@@ -1,0 +1,237 @@
+    :root{
+        --primary-text-color: rgb(245, 245, 245);
+        --secondary-text-color: rgb(190, 190, 190);
+        --bg-color: #111111;
+        --content-bg-color: #202020;
+        --btn-color: rgb(0, 140, 255);
+        --btn-hover-color: rgb(5, 99, 161);
+        --detail-color: rgb(255, 153, 0);
+        --onda: url("./img/onda-dark.svg");
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    /* outline: 1px solid red; */
+}
+
+/* RESETS */
+body {
+    background-color: var(--bg-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+li a {
+    text-align: center;
+    padding: 12px 16px;
+    min-width: 120px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    background-color: var(--content-bg-color);
+    border-radius: 5px;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 25px auto;
+    background-color: var(--content-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+}
+
+.texto-principal {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: end;
+    align-items: end;
+    min-height: 230px;
+    position: relative;
+}
+
+.texto-principal h1 {
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+}
+
+.texto-principal a {
+    background-color: var(--btn-color);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.texto-principal p {
+    letter-spacing: 0.5px;
+    color: var(--secondary-text-color);
+}
+
+.texto-principal a:hover {
+    background-color: var(--btn-hover-color)
+}
+
+.icon{
+    max-width: 36px;
+}
+
+.imagem-principal{
+    height: 100%;
+    object-fit: cover;
+}
+
+.vantagens-lista {
+    min-height: 280px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vantagens-title {
+    display: flex;
+    align-items: center;
+    background: var(--onda);
+}
+
+.vantagens-title h2 {
+    color: var(--detail-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 15px;
+}
+
+.vantagem-item {
+    padding: 10px;
+    display: grid;
+    gap: 4px 8px;
+    justify-content: start;
+}
+
+.vantagem-item h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.vantagem-item p {
+    grid-column: 2;
+    color: var(--secondary-text-color);
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    padding: 25px;
+    background-color: var(--content-bg-color);
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.vantagens-lista .vantagem-item:nth-child(odd) {
+    background-color: var(--bg-color);
+}
+
+.vantagens-lista .vantagem-item:hover {
+    border-left: 4px solid var(--detail-color);
+}
+
+@media (max-width: 600px) {
+
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    a.botao {
+        display: block;
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    .texto-principal {
+        padding: 25px;
+        align-items: start;
+        text-align: start;
+    }
+
+    .texto-principal h1 {
+        font-size: 1.75rem;
+    }
+
+    .texto-principal p {
+        text-indent: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .imagem-principal{
+       background-size: cover;
+       background-repeat: no-repeat;
+       max-width: 100%;
+       display: block;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        background-color: var(--content-bg-color);
+        z-index: 999;
+        padding: 25px;
+        box-shadow: 0px 1px 2px rgba(126, 126, 126, 0.5);
+        margin: 0;
+    }
+
+    .vantagens-title h1 {
+        padding: 25px 0px 0px;
+    }
+
+}

@@ -1,0 +1,18 @@
+
+CADA UM DEVE ESCOLHER UM TEMA DIFERENTE (ex: um jogo, um seriado, um filme)
+
+1- Escolher uma imagem ou ícone (em  https://www.svgrepo.com/ tem alguns bons) e colocar como LOGO no header
+
+2- Colocar texto nos dois botões próximos a logo 
+
+3- Colocar texto no título principal, no parágrafo e no botão
+
+4- Escolher uma imagem para a parte ao lado do texto
+
+5- Colocar texto no TÍTULO secundário
+
+6- Colocar um ícone (do site https://www.svgrepo.com/) em cada img dentro dos itens da lista 
+
+7- Colocar texto no título terciário e no parágrafo dentro de cada item da lista
+
+8- Adicionar seu nome ao Footer

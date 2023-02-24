@@ -1,0 +1,13 @@
+1- TEREMOS UM ARQUIVO    index.js   PARA MANIPULAR NOSSOS ELEMENTOS 
+
+2-  ARQUIVO   index.js   DEVE SER IMPORTADO NA PÁGINA   index.html
+
+3- Iremos criar uma VARIÁVEL para armazenar o BOTÃO através de seu ID no HTML
+      var botaoBorda = document.getElementById("botao-borda");
+
+4- Iremos criar uma VARIÁVEL para armazenar o ELEMENTO QUE QUEREMOS MODIFICAR através de seu ID
+
+5- Criaremos um EVENT LISTENER no BOTÃO, que irá disparar toda vez que houver um CLICK
+     botaoBorda.addEventListener("click", ()=> {
+        *** aqui colocamos o código para modificar o elemento que quisermos ***
+     });

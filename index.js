@@ -22,4 +22,3 @@ botaoBorda.addEventListener("click", ()=> {
         botaoBorda.innerText = "Adicionar borda";
     }
 });
-

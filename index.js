@@ -22,3 +22,5 @@ botaoBorda.addEventListener("click", ()=> {
         botaoBorda.innerText = "Adicionar borda";
     }
 });
+
+alertz.addEventListener("click", ()=>{ alert("Esse app foi desenvolvido por Nome do Aluno") })

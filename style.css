@@ -19,7 +19,6 @@
 /* RESETS */
 body {
     background-color: var(--bg-color);
-    padding-top: 40px;
 }
 
 img {
@@ -178,6 +177,10 @@ footer {
 @media (max-width: 600px) {
     nav{
     display: none;
+    }
+    
+    main{
+    padding-top: 40px;
     }
 
     body::-webkit-scrollbar {
